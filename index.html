@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма для Aristos Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <div class="loaderArea">
+    <div class="loader">
+      <hr/><hr/><hr/><hr/>
+    </div>
+    <div class="authArea">
+      <div class="auth">
+        <form>
+            <input name="login" placeholder="Имя">
+            <input type="password" name="password" placeholder="Пароль">
+          <div class="check" onclick="checkValidity()"><span>Войти</span></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="waitMessage"><span>Проверка</span></div>
+  <div class="errorMessage"><span>Ошибка! Попробуйте снова.</span></div>
+  <div class="successMessage"><span>Всё верно!</span></div>
+  <div class="welcome"><span>Добро пожаловать!</span></div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+}
+
+.loader{
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  width:200px; height:200px;
+}
+.loaderArea{
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+  z-index: 10;
+}
+.loader hr{
+  border:0;
+  margin:0;
+  width:40%; height:40%;
+  position:absolute;
+  border-radius:50%;
+  animation:spin 2s ease infinite
+}
+
+.loader :first-child{background:#19A68C;animation-delay:-1.5s}
+.loader :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.loader :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.loader :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+
+.authArea {
+  background-color: #4e6761;
+  width: 400px;
+  height: 250px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.auth {
+  width: 230px;
+  position: fixed; top: 50%; left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.auth input {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  width: 200px;
+}
+
+.check {
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #19A68C;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.waitMessage {
+  font-family: "Roboto", sans-serif;
+  width: 230px;
+  position: fixed; top: 30%; left: 50%;
+  z-index: 1;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #f6f19d;
+  text-align: center;
+  display: none;
+  white-space: nowrap;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.errorMessage {
+  font-family: "Roboto", sans-serif;
+  width: 230px;
+  position: fixed; top: 30%; left: 50%;
+  z-index: 1;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #F63D3A;
+  text-align: center;
+  display: none;
+  white-space: nowrap;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.successMessage {
+  font-family: "Roboto", sans-serif;
+  width: 230px;
+  position: fixed; top: 30%; left: 50%;
+  z-index: 1;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #8efa8c;
+  text-align: center;
+  display: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.welcome {
+  font-family: "Roboto", bold;
+  width: 700px;
+  position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #193B48;
+  text-align: center;
+  font-size: 60px;
+  display: none;
+  white-space: nowrap;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.welcome span {
+  display: inline-block;
+  padding: 100px 15px;
+  color: #CAE4D8;
+}
